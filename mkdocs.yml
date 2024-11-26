@@ -1,0 +1,43 @@
+site_name: Blog Tutorial
+site_description: an example blog set up following the tutorial
+site_url: http://www.example.com
+
+theme:
+  name: material
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.footer
+
+plugins:
+  - search
+  - blog:
+      blog_dir: .
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/UltraInstinct05
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/UltraInstinct05
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ultrainstinct05
